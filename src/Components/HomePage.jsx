@@ -18,7 +18,7 @@ const HomePage = () => {
             I design and develop responsive, user-centric web experiences that feel as good as they look.</p>
         <div className='home2'>
             <a href="#contact"><h3>➤  Contact </h3></a>
-            <a target='_blank'rel='noopener noreferrer' href="https://drive.google.com/uc?export=download&id=15S-4In3Kkm16hKe2dgxF7-K5eAZ4kY7z"><h3>My Resume </h3></a>
+            <a target='_blank'rel='noopener noreferrer' href="https://drive.google.com/file/d/1mpEmlRAW6uELCel1KPESOptcFjLuxnxp/view?usp=sharing"><h3>My Resume </h3></a>
         </div>
         
     </div>

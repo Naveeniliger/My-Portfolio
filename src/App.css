@@ -27,9 +27,11 @@ html {
   justify-content: space-around;
   gap: 6em;
 }
-.navbarlists a{
+
+.navbarlists a {
   text-decoration: none;
 }
+
 .name img {
   width: 2.5em;
 
@@ -43,7 +45,7 @@ html {
 
 
 .navbarlists h4 {
-  padding: 0.5em 1em;
+  padding: 0.6em 1em;
   border: 2px solid #00f7ff;
   border-radius: 25px;
   color: #00f7ff;
@@ -67,8 +69,8 @@ html {
   background-color: #00f7ff;
   color: #000;
   box-shadow: 0 0 15px #00f7ff,
-    0 0 10px #00f7ff,
-    0 0 25px #00f7ff;
+    0 0 0px #00f7ff,
+    0 0 0px #00f7ff;
   transform: scale(0.9);
   border-radius: 2em;
   padding-inline: 1em;
@@ -86,9 +88,9 @@ html {
   border: 2px solid #00f7ff;
   border-radius: 3em;
   box-shadow:
-    0 0 12px #00f7ff,
-    0 0 24px #00f7ff,
-    0 0 36px #00f7ff;
+    0 0 2px #00f7ff,
+    0 0 4px #00f7ff,
+    0 0 6px #00f7ff;
   z-index: 999;
   margin: 0.4em;
   /* transition: all 0.3s ease-in-out; */
@@ -136,17 +138,19 @@ html {
   margin-block: 5em;
   margin-inline: 4em;
 }
-.frontendtext h3 a{
+
+.frontendtext h3 a {
   margin-block: 5em;
   margin-inline: 4em;
- 
+
 }
 
 
 .home2 {
   display: flex;
 }
-.home2 a{
+
+.home2 a {
   text-decoration: none;
 }
 
@@ -192,7 +196,7 @@ html {
     0 0 20px #00f7ff,
     0 0 30px #00f7ff;
 
-  animation: pulseGlow 5s ease-in-out infinite;
+  animation: pulseGlow 4s ease-in-out infinite;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -203,41 +207,41 @@ html {
 @keyframes pulseGlow {
   0% {
     box-shadow:
+      0 0 5px #00f7ff,
       0 0 10px #00f7ff,
-      0 0 20px #00f7ff,
-      0 0 30px #00f7ff;
+      0 0 20px #00f7ff;
     border-color: #00f7ff;
   }
 
   25% {
     box-shadow:
+      0 0 5px #a020f0,
       0 0 10px #a020f0,
-      0 0 20px #a020f0,
-      0 0 30px #a020f0;
+      0 0 20px #a020f0;
     border-color: #a020f0;
   }
 
   50% {
     box-shadow:
+      0 0 5px #ff0080,
       0 0 10px #ff0080,
-      0 0 20px #ff0080,
-      0 0 30px #ff0080;
+      0 0 20px #ff0080;
     border-color: #ff0080;
   }
 
   75% {
     box-shadow:
+      0 0 5px #3b82f6,
       0 0 10px #3b82f6,
-      0 0 20px #3b82f6,
-      0 0 30px #3b82f6;
+      0 0 20px #3b82f6;
     border-color: #3b82f6;
   }
 
   100% {
     box-shadow:
+      0 0 5px #00f7ff,
       0 0 10px #00f7ff,
-      0 0 20px #00f7ff,
-      0 0 30px #00f7ff;
+      0 0 20px #00f7ff;
     border-color: #00f7ff;
   }
 }
@@ -305,10 +309,11 @@ html {
   font-size: 3em;
   font-weight: bold;
   text-align: center;
-  padding: 0.2em 1em;
+  padding: 0.1em 1em;
   margin: auto;
   border: 2px solid #00f7ff;
   border-radius: 3em;
+  cursor: pointer;
 
   /* Animated gradient text */
   background: linear-gradient(270deg, #00f7ff, #ff00ff, #00ff6a, #ffcc00, #00f7ff);
@@ -317,10 +322,10 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: gradientMove 6s ease infinite, borderGlow 2s ease-in-out infinite;
+  animation: gradientMove 4s ease infinite, borderGlow 2s ease-in-out;
 
   /* Base glow */
-  box-shadow: 0 0 12px #00f7ff;
+  box-shadow: 0 0 10px #00f7ff;
 }
 
 /* Text gradient animation */
@@ -342,7 +347,7 @@ html {
 @keyframes borderGlow {
 
   0%,
-  100% {
+  10% {
     box-shadow:
       0 0 8px #00f7ff,
       0 0 16px #ff00ff,
@@ -350,7 +355,7 @@ html {
       0 0 32px #ffcc00;
   }
 
-  50% {
+  5% {
     box-shadow:
       0 0 16px #ff00ff,
       0 0 32px #00f7ff,
@@ -454,7 +459,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: gradientMove 6s ease infinite, borderGlow 2s ease-in-out infinite;
+  animation: gradientMove 6s ease infinite, borderGlow 2s ease-in-out;
 
   /* Base glow */
   box-shadow: 0 0 12px #00f7ff;
@@ -515,6 +520,7 @@ html {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
@@ -532,11 +538,13 @@ html {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* Standard version for non-WebKit browsers */
+  background-clip: text;
+  /* Standard version for non-WebKit browsers */
 
   animation: glowmove 8s linear infinite;
   display: inline-block;
 }
+
 .project1 a img {
   transition: all 0.3s ease;
   border-radius: 50px;
@@ -560,9 +568,11 @@ html {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -580,16 +590,19 @@ html {
     box-shadow: 0 0 8px #6ee7b7, 0 0 16px #3b82f6;
     border-color: #3b82f6;
   }
+
   50% {
     box-shadow: 0 0 12px #f472b6, 0 0 24px #9333ea;
     border-color: #9333ea;
   }
+
   100% {
     box-shadow: 0 0 8px #6ee7b7, 0 0 16px #3b82f6;
     border-color: #3b82f6;
   }
 }
-.contactheader{
+
+.contactheader {
   text-align: center;
   margin-block: 2em;
 }
@@ -598,6 +611,7 @@ html {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
@@ -616,7 +630,8 @@ html {
 
   /* Gradient text */
   -webkit-background-clip: text;
-  background-clip: text; /* Standard */
+  background-clip: text;
+  /* Standard */
   color: transparent;
   -webkit-text-fill-color: transparent;
 
@@ -635,9 +650,11 @@ html {
   align-items: center;
   gap: 2em;
 }
-.info a{
+
+.info a {
   color: inherit;
 }
+
 .info img {
   width: 2em;
   padding: 0.4em;
@@ -666,10 +683,12 @@ html {
     box-shadow: 0 0 10px #00f7ff, 0 0 20px #a020f0;
     border-color: #00f7ff;
   }
+
   50% {
     box-shadow: 0 0 15px #ff0080, 0 0 25px #9333ea;
     border-color: #ff0080;
   }
+
   100% {
     box-shadow: 0 0 10px #00f7ff, 0 0 20px #a020f0;
     border-color: #00f7ff;
@@ -680,7 +699,8 @@ html {
   max-width: 25em;
   margin-left: 18em;
   margin-bottom: 2em;
-  background-color: #111827; /* dark slate */
+  background-color: #111827;
+  /* dark slate */
   padding: 3em 4em;
   border: 3px solid #00f7ff;
   border-radius: 1em;
@@ -740,10 +760,13 @@ html {
 /* footer section   */
 
 @keyframes glowFooterBorder {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
     border-color: #00f7ff;
   }
+
   50% {
     box-shadow: 0 0 16px #00f7ff, 0 0 28px #00f7ff;
     border-color: #00f7ff;
@@ -752,17 +775,18 @@ html {
 
 .footer {
   text-align: center;
-  margin-top: 4em;
-  margin-bottom: 1em;
-  padding: 0.2em 0.1em;
-  font-size: 1em;
+  margin-top: 6em;
+  margin-bottom: 0.1em;
+  padding: 0.1em 0.1em;
+  font-size: 0.8em;
   font-weight: bold;
 
-  background: linear-gradient(90deg, #0f172a, #1e293b); /* Match nav bar dark theme */
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  /* Match nav bar dark theme */
   color: #f5f5f5;
 
   border: 2px solid #00f7ff;
-  border-radius: 1em;
+  border-radius: 3em;
 
   animation: glowFooterBorder 4s ease-in-out infinite;
 }
@@ -876,7 +900,12 @@ html {
     font-size: 0.8em;
     padding: 1em;
   }
+
+  .arrow {
+    display: none;
+  }
 }
+
 @media (max-width: 768px) {
   .formbox {
     width: 80%;
@@ -888,7 +917,12 @@ html {
     font-size: 0.9em;
     padding: 0.7em;
   }
+
+  .arrow {
+    display: none;
+  }
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -901,5 +935,9 @@ html {
     flex-direction: column;
     gap: 0.1em;
     margin: 0;
+  }
+
+  .arrow {
+    display: none;
   }
 }
